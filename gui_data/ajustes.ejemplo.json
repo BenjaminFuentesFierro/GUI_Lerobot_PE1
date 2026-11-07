@@ -1,0 +1,38 @@
+{
+  "_comentario": "Plantilla de configuracion. La aplicacion crea gui_data/ajustes.json en el primer arranque; este archivo esta aqui solo como referencia de los campos. Ajusta puertos e IDs a tu equipo desde la pestana Ajustes de la interfaz.",
+
+  "follower_port": "/dev/ttyACM1",
+  "follower_id": "my_awesome_follower_arm",
+  "leader_port": "/dev/ttyACM0",
+  "leader_id": "my_awesome_leader_arm",
+  "use_leader": true,
+
+  "fps": 30,
+  "idle_fps": 10,
+  "use_degrees": false,
+  "max_relative_target": null,
+  "preset_duration_s": 3.0,
+
+  "camera": {
+    "enabled": false,
+    "name": "front",
+    "index_or_path": "http://IP_DEL_HOST:8181/stream",
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "fourcc": "MJPG"
+  },
+
+  "dataset": {
+    "repo_id": "usuario/mi_dataset",
+    "single_task": "Tomar el objeto y colocarlo en la caja",
+    "num_episodes": 5,
+    "episode_time_s": 30.0,
+    "reset_time_s": 10.0,
+    "root": "",
+    "push_to_hub": false,
+    "private": false,
+    "resume": false,
+    "vcodec": "libsvtav1"
+  }
+}

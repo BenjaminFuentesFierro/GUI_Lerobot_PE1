@@ -1,0 +1,25 @@
+# Bytecode de Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Configuración local: puertos, IDs de calibración, poses y rutinas de ESTE
+# equipo. La aplicación la genera sola en el primer arranque a partir de
+# gui_data/ajustes.ejemplo.json, así que no se versiona.
+gui_data/*.json
+!gui_data/ajustes.ejemplo.json
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store

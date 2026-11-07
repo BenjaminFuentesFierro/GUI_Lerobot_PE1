@@ -1,0 +1,22 @@
+# Dependencias de la GUI, dentro del entorno de LeRobot (en WSL/Linux).
+#
+#   pip install -r requirements.txt
+#
+# LeRobot NO está aquí a propósito: se instala aparte siguiendo su propia guía,
+# porque arrastra PyTorch y la variante depende de si hay CUDA. Ver README.
+#
+# Versiones con las que se desarrolló y verificó el proyecto:
+#   Python 3.10.20 · lerobot 0.4.4 · WSL2 Ubuntu 22.04
+
+customtkinter>=6.0.0      # la interfaz
+pillow>=10.0.0            # convierte los fotogramas a imagen de Tk
+numpy>=1.24.0             # ya viene con lerobot; se usa para los fotogramas
+
+# OpenCV: lerobot instala la variante headless, que es suficiente porque la GUI
+# dibuja los fotogramas ella misma y nunca abre una ventana de OpenCV.
+opencv-python-headless>=4.8.0
+
+# ---------------------------------------------------------------------------
+# En el lado de WINDOWS, solo para servidor_camara.py, hace falta además:
+#   pip install opencv-python
+# Ese script no se ejecuta dentro de WSL. Ver la sección de cámara del README.

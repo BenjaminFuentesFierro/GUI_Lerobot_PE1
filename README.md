@@ -18,7 +18,7 @@ en WSL2 Ubuntu 22.04 bajo Windows 11.
 |---|---|---|
 | Teleoperación | Bucle espejo a 30 Hz: el seguidor copia al líder | `lerobot-teleoperate` |
 | Articulaciones | Un deslizador por servo, en su rango calibrado | — |
-| Poses | Posturas guardadas, alcanzadas con movimiento interpolado | — |
+| Poses | Posturas guardadas | — |
 | Rutinas | Reproduce un episodio grabado, con repeticiones y velocidad | `lerobot-replay` |
 | Grabación | Dataset con el bucle oficial de LeRobot | `lerobot-record` |
 | Cámara | Vista del entorno, incluida en el dataset | `lerobot-find-cameras` |
@@ -38,7 +38,7 @@ Tres medidas de seguridad condicionan el diseño:
 
 - Kit **Seeed Studio SO-101**, dos brazos (líder y seguidor).
 - Servos **Feetech STS3215**, seis por brazo, IDs 1 a 6.
-- Alimentación: 12 V para el seguidor, 5 V (o solo USB) para el líder.
+- Alimentación: 12 V para el seguidor, 5 V para el líder.
 - Opcional: una webcam USB.
 
 ### Software

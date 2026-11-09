@@ -354,4 +354,4 @@ el primer arranque y no se versionan: contienen puertos e IDs de cada equipo.
 ## Licencia y créditos
 
 Construido sobre [LeRobot](https://github.com/huggingface/lerobot) (Apache 2.0),
-de Hugging Face. Trabajo de práctica para el curso PE1, Universidad de La Frontera.
+de Hugging Face. Trabajo de práctica de estudios, Universidad de La Frontera.
